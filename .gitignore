@@ -1,0 +1,11 @@
+
+OgreTest2013/Debug/*
+
+OgreTest2013/Release/*
+
+OgreTest2013/media/
+OgreTest2013/*.sdf
+
+OgreTest2013/OgreTest2013/Debug/
+OgreTest2013/OgreTest2013/Release/
+OgreTest2013/OgreTest2013/Dependencies/
