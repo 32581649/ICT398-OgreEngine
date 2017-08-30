@@ -23,5 +23,26 @@ void World::RunGame(int* argc, char* argv[], const char* window_name, const char
 }
 
 void World::UpdateGame(){
+
+	//GameStatus* game_status_instance = Singleton<GameStatus>::Instance();
+	if ((*CurrentGameStatus) != GAME_PLAYING){
+		if ((*CurrentGameStatus) == GAME_DONE){
+			GameDestruction();
+			exit(0);
+		}
+
+		if ((*CurrentGameStatus) == GAME_MAIN_MENU){
+			// ui.mainMenu(512, 512, 0, 0); //texture2d.Display2DTexture(512, 512, 0, 0, GAME_MAIN_MENU_TEXTURE);
+		}
+
+		if ((*CurrentGameStatus) == GAME_HELP_MENU){
+			//texture2d.Display2DTexture(512, 512, 0, 0, GAME_HELP_MENU_TEXTURE);
+		}
+
+		if ((*CurrentGameStatus) == GAME_CREDIT_PAGE){
+			//texture2d.Display2DTexture(512, 512, 0, 0, CREDIT_TEXTURE);
+		}
+
+	}
 	
 }

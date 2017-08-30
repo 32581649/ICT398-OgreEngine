@@ -12,8 +12,8 @@ class World
 {
 public:
 	World(){
-		GameStatus* game_status_instance = Singleton<GameStatus>::Instance();
-		*game_status_instance = GAME_PLAYING;
+		CurrentGameStatus = new GameStatus();
+		*CurrentGameStatus = GAME_PLAYING;
 	};
 	~World();
 	World(const World & cpy){};
@@ -25,6 +25,8 @@ public:
 private:
 	GraphicsFactory graphics_factory;
 	GraphicsI** graphics_handler = Singleton<GraphicsI*>::Instance();
+	GameStatus* CurrentGameStatus;
+	
 
 	double elapsed_time_second;
 	int fps;
