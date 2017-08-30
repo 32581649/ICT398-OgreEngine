@@ -11,13 +11,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GameStatus.h" />
     <ClInclude Include="GraphicsEngines.h" />
     <ClInclude Include="GraphicsI.h" />
     <ClInclude Include="OgreEngine.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="World.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OgreEngine.cpp" />
+    <ClCompile Include="World.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C470608D-A9B2-49D0-8BF5-78E946E81064}</ProjectGuid>
